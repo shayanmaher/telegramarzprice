@@ -7,7 +7,7 @@ import datetime ,pytz
 from extract import extract_element_from_json
 tz = pytz.timezone('Asia/Tehran')
 fa=JalaliDateTime.now(tz).strftime('%c')
-bot = telebot.TeleBot("1871250002:AAH6wKLiOJJ_QHNEdFvLR1qAB-o2iDOaSWY",parse_mode="MARKDOWN")
+bot = telebot.TeleBot("TOKEN",parse_mode="MARKDOWN")
 from extract import extract_element_from_json
 endpoints='https://call17.tgju.org:443/ajax.json'
 response= requests.get(endpoints)
